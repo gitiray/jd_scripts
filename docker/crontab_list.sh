@@ -37,9 +37,6 @@
 #新潮品牌狂欢（6.18过期）
 20 1,21 * * * node /scripts/jd_mcxhd.js >> /scripts/logs/jd_mcxhd.log 2>&1
 
-#京喜领88元红包(6.31到期)
-30 1,6,12,21 * * * node /scripts/jd_jxlhb.js >> /scripts/logs/jd_jxlhb.log 2>&1
-
 #省钱大赢家之翻翻乐
 10,40 * * * * node /scripts/jd_big_winner.js >> /scripts/logs/jd_big_winner.log 2>&1
 
@@ -48,6 +45,9 @@
 
 #签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
+
+#京喜签到
+7 7,17 * * * cd /scripts && node jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 
 #东东超市兑换奖品
 0,30 0 * * * node /scripts/jd_blueCoin.js >> /scripts/logs/jd_blueCoin.log 2>&1
