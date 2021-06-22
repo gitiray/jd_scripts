@@ -40,6 +40,9 @@
 #省钱大赢家之翻翻乐
 10,40 * * * * node /scripts/jd_big_winner.js >> /scripts/logs/jd_big_winner.log 2>&1
 
+#京享值PK_ddo
+15 0,6,13,19,21 * * * node /scripts/jd_zoopk.js >> /scripts/logs/jd_zoopk.log 2>&1
+
 
 ##############长期活动##############
 
